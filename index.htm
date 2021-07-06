@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Cabins || Website</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/css/splide-core.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/css/themes/splide-default.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tourney:wght@100&family=Yomogi&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/197283b8d5.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <header>
+        <section>
+            <div class="menu-toggle"></div>
+            <nav class="navbar">
+            <h2 class="logo">CanopyCabins</h2>
+                <ul>
+                    <li>cabins</li>
+                    <li>activities</li>
+                    <li>info</li>
+                    <li>about</li>
+                    <li>my booking</li>
+                    <li>book a cabin</li>
+                </ul>
+            </nav></header>
+            <div class="clearfix"></div>
+            <div class="info">
+                <h2>luxury</h2>
+                <h1>cabins</h1>
+                <button>see all cabins</button>
+            </div>
+        </section>
+        <footer>
+            <div class="reservation">
+                <div class="arrival">
+                    <h5>ARRIVAL DATE</h5>
+                    <input type="date" name="" id="">
+                </div>
+                <div class="departure">
+                    <h5>DEPARTURE DATE</h5>
+                    <input type="date" name="" id="">
+                </div>
+                <div class="guests">
+                    <h5>GUESTS</h5>
+                    <input type="number" name="" id="">
+                </div>
+                <button>CHECK RESERVATION</button>
+            </div>
+        </footer>
+    </div>
+        <section class="second">
+            <div class="detailing">
+                <h2>Luxury Cabins on the Go!</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus totam provident autem similique ad consequatur nostrum qui minima nihil expedita reiciendis quidem rem iusto dolores ea quibusdam accusantium, iure veniam, corrupti labore? Ex cum maxime explicabo magni quae aliquam qui!</p>
+            </div>  
+        </section>
+        <section class="third">
+        <div class="slider">
+            <div id="image-slider" class="splide">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <img src="./707772.png">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="./4554224.png">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="./31425432.png">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="social">
+        <ul class="social-icons">
+            <li><img src="https://seeklogo.com/images/I/instagram-new-2016-logo-4773FE3F99-seeklogo.com.png" alt=""></li>
+            <li><img src="https://seeklogo.com/images/Y/youtube-icon-logo-521820CDD7-seeklogo.com.png" alt=""></li>
+            <li><img src="https://seeklogo.com/images/F/facebook-logo-966BBFBC34-seeklogo.com.png" alt=""></li>
+        </ul>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/js/splide.js"></script>
+                  <script type="text/javascript">
+                    document.addEventListener( 'DOMContentLoaded', function () {
+                        var splide = new Splide( '#image-slider' );
+
+splide.on( 'autoplay:playing', function ( rate ) {
+	console.log( rate ); // 0-1
+} );
+
+splide.mount();
+            } );  
+                  </script>
+                  <script>
+                      const menu = document.querySelector('.menu-toggle');
+                      const nav = document.querySelector('.navbar');
+                      const info = document.querySelector('.info');
+                      menu.addEventListener('click', () =>{
+    menu.classList.toggle('active')
+    nav.classList.toggle('active')
+    if(nav.classList.contains('active')){
+        info.style.zIndex = "-1";
+    }else{
+        info.style.zIndex = "1";
+    }
+});
+                  </script>
+</body>
+</html>
